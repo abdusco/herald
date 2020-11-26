@@ -1,8 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Herald", "Herald\Herald.csproj", "{7300D5FB-92C3-4BF4-AA51-4D73D9DC8FB0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Herald", "src\Herald\Herald.csproj", "{7300D5FB-92C3-4BF4-AA51-4D73D9DC8FB0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Herald.Tests", "Herald.Tests\Herald.Tests.csproj", "{3A5C9B20-D842-4DE9-A71A-552C46D9BECC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Herald.Tests", "src\Herald.Tests\Herald.Tests.csproj", "{3A5C9B20-D842-4DE9-A71A-552C46D9BECC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
