@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AbdusCo.Herald
+namespace Herald
 {
     public class Address : IEquatable<Address>
     {

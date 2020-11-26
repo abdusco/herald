@@ -1,7 +1,7 @@
 ﻿using System.IO;
 using System.Reflection;
 
-namespace AbdusCo.Herald
+namespace Herald
 {
     internal static class AssemblyExtensions
     {

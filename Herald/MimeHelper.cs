@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace AbdusCo.Herald
+namespace Herald
 {
     internal class MimeHelper
     {

@@ -1,11 +1,10 @@
 using System;
 using System.Data;
-using System.Reflection;
 using System.Threading;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace AbdusCo.Herald.Tests
+namespace Herald.Tests
 {
     public class EmailTests
     {

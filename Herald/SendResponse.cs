@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace AbdusCo.Herald
+namespace Herald
 {
     public class SendResponse
     {

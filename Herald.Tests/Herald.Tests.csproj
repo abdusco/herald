@@ -14,7 +14,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\AbdusCo.Herald\AbdusCo.Herald.csproj" />
+      <ProjectReference Include="..\Herald\Herald.csproj" />
     </ItemGroup>
 
 </Project>

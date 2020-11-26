@@ -1,6 +1,6 @@
 ﻿using System.IO;
 
-namespace AbdusCo.Herald
+namespace Herald
 {
     internal static class FileInfoExtensions
     {

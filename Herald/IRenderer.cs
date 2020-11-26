@@ -1,7 +1,7 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
 
-namespace AbdusCo.Herald
+namespace Herald
 {
     public interface IRenderer
     {

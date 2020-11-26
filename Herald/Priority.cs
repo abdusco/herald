@@ -1,4 +1,4 @@
-﻿namespace AbdusCo.Herald
+﻿namespace Herald
 {
     public enum Priority
     {
