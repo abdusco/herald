@@ -1,5 +1,8 @@
 using System;
+using System.Data;
 using System.Reflection;
+using System.Threading;
+using System.Threading.Tasks;
 using Xunit;
 
 namespace AbdusCo.Herald.Tests
@@ -64,6 +67,29 @@ namespace AbdusCo.Herald.Tests
                 .WithBcc(new Address("1@example.com"))
                 .WithBcc(new Address("2@example.com"));
             Assert.Equal(2, e.BccAddresses.Count);
+        }
+
+        [Fact]
+        public void CannotRenderIfBodyOrTemplateNotGiven()
+        {
+            var e = new Email(new Address("a@b.com"));
+            Assert.ThrowsAsync<ConstraintException>(() => e.RenderBodyAsync(new StubRenderer()));
+        }
+
+        [Fact]
+        public async void CannotRenderWithTemplate()
+        {
+            var e = new Email(new Address("a@b.com"))
+                .UsingStringTemplate("template", new { });
+            var rendered = await e.RenderBodyAsync(new StubRenderer());
+            Assert.Equal("template", rendered);
+        }
+
+
+        private class StubRenderer : IRenderer
+        {
+            public Task<string> RenderAsync<T>(string template, T model, CancellationToken cancellationToken = default)
+                => Task.FromResult(template);
         }
     }
 }
