@@ -2,7 +2,6 @@
 using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
-using Microsoft.Extensions.Logging;
 
 namespace Herald
 {
@@ -18,13 +17,11 @@ namespace Herald
     {
         private readonly string _emailDumpDir;
         private readonly IRenderer _renderer;
-        private readonly ILogger<FilesystemEmailSender> _logger;
 
-        public FilesystemEmailSender(string emailDumpDir, IRenderer renderer, ILogger<FilesystemEmailSender> logger)
+        public FilesystemEmailSender(string emailDumpDir, IRenderer renderer)
         {
             _emailDumpDir = emailDumpDir;
             _renderer = renderer;
-            _logger = logger;
         }
 
         public async Task<SendResponse> SendAsync(Email email, CancellationToken cancellationToken = default)
@@ -33,8 +30,6 @@ namespace Herald
             var path = Path.Join(_emailDumpDir, basename);
 
             var contents = await email.RenderBodyAsync(_renderer, cancellationToken);
-
-            _logger.LogDebug("Saving email to {SavePath}", path);
             await File.WriteAllTextAsync(path, contents, cancellationToken);
 
             return SendResponse.Success;
