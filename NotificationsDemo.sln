@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Herald", "src\Herald\Herald
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Herald.Tests", "src\Herald.Tests\Herald.Tests.csproj", "{3A5C9B20-D842-4DE9-A71A-552C46D9BECC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Herald.Rendering.Scriban", "src\Herald.Rendering.Scriban\Herald.Rendering.Scriban.csproj", "{2452509D-ABF4-4DF0-846C-392447291D36}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{3A5C9B20-D842-4DE9-A71A-552C46D9BECC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A5C9B20-D842-4DE9-A71A-552C46D9BECC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A5C9B20-D842-4DE9-A71A-552C46D9BECC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2452509D-ABF4-4DF0-846C-392447291D36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2452509D-ABF4-4DF0-846C-392447291D36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2452509D-ABF4-4DF0-846C-392447291D36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2452509D-ABF4-4DF0-846C-392447291D36}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -2,7 +2,7 @@
 
     <PropertyGroup>
         <TargetFramework>netcoreapp3.1</TargetFramework>
-
+        <PreserveCompilationContext>true</PreserveCompilationContext>
         <IsPackable>false</IsPackable>
     </PropertyGroup>
 
@@ -14,6 +14,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\Herald.Rendering.Scriban\Herald.Rendering.Scriban.csproj" />
       <ProjectReference Include="..\Herald\Herald.csproj" />
     </ItemGroup>
 
