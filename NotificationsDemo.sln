@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbdusCo.Herald", "AbdusCo.Herald\AbdusCo.Herald.csproj", "{7300D5FB-92C3-4BF4-AA51-4D73D9DC8FB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbdusCo.Herald.Tests", "AbdusCo.Herald.Tests\AbdusCo.Herald.Tests.csproj", "{3A5C9B20-D842-4DE9-A71A-552C46D9BECC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7300D5FB-92C3-4BF4-AA51-4D73D9DC8FB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7300D5FB-92C3-4BF4-AA51-4D73D9DC8FB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7300D5FB-92C3-4BF4-AA51-4D73D9DC8FB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7300D5FB-92C3-4BF4-AA51-4D73D9DC8FB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A5C9B20-D842-4DE9-A71A-552C46D9BECC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A5C9B20-D842-4DE9-A71A-552C46D9BECC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A5C9B20-D842-4DE9-A71A-552C46D9BECC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A5C9B20-D842-4DE9-A71A-552C46D9BECC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
